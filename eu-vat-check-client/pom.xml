@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <name>VIES VAT number validation client</name>
+    <description>Verify the validity of a VAT number issued by any Member State of the European Union</description>
+
+    <parent>
+        <groupId>net.lin-k.eu</groupId>
+        <artifactId>eu-vat-check</artifactId>
+        <version>GIT-SNAPSHOT</version>
+    </parent>
+
+    <groupId>net.lin-k.eu.eu-vat-check</groupId>
+    <artifactId>eu-vat-check-client</artifactId>
+    <packaging>jar</packaging>
+
+    <dependencies>
+
+        <!-- WSDL -->
+        <dependency>
+            <groupId>net.lin-k.eu.eu-vat-check</groupId>
+            <artifactId>eu-vat-check-ws</artifactId>
+            <version>GIT-SNAPSHOT</version>
+        </dependency>
+
+    </dependencies>
+
+</project>

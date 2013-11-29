@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <name>VIES VAT number validation webservice</name>
+    <description>Verify the validity of a VAT number issued by any Member State of the European Union</description>
+
+    <parent>
+        <groupId>net.lin-k.eu</groupId>
+        <artifactId>eu-vat-check</artifactId>
+        <version>GIT-SNAPSHOT</version>
+    </parent>
+
+    <groupId>net.lin-k.eu.eu-vat-check</groupId>
+    <artifactId>eu-vat-check-ws</artifactId>
+    <packaging>jar</packaging>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>wsimport</id>
+                        <phase>process-classes</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <tasks>
+                                <taskdef classname="com.sun.tools.ws.ant.WsImport" name="wsimport">
+                                    <classpath>
+                                        <path refid="maven.compile.classpath" />
+                                        <path refid="maven.plugin.classpath" />
+                                        <path refid="maven.runtime.classpath" />
+                                    </classpath>
+                                </taskdef>
+                                <mkdir dir="${project.build.directory}/generated-sources/java" />
+                                <wsimport debug="true" fork="true" destdir="${project.build.directory}/classes" verbose="true" wsdl="${basedir}/src/main/resources/checkVatService.wsdl" sourcedestdir="${project.build.directory}/generated-sources/java">
+                                    <produces dir="${project.build.directory}/generated-sources/java">
+                                        <include name="**/*.java" />
+                                    </produces>
+                                </wsimport>
+                            </tasks>
+                            <sourceRoot>
+                                ${project.build.directory}/generated-sources/java
+                            </sourceRoot>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+
+        <!-- Specific dependencies: Util -->
+        <dependency>
+            <groupId>net.lin-k.util</groupId>
+            <artifactId>util-ws</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- Specific dependencies: External -->
+        <dependency>
+            <groupId>com.thoughtworks.xstream</groupId>
+            <artifactId>xstream</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.xml.ws</groupId>
+            <artifactId>jaxws-tools</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.xml.ws</groupId>
+            <artifactId>jaxws-rt</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+    </dependencies>
+
+</project>
