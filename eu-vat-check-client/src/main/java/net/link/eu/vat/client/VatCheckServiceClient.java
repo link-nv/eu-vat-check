@@ -31,8 +31,8 @@ import javax.xml.ws.Holder;
  *      boolean isValid = vatCheckServiceClient.isVatNumberValid();
  *
  *      //After isVatNumberValid() you can get the name and address of the enterprise
- *      String name    = vatCheckServiceClient.getName();
- *      String address = vatCheckServiceClient.getAddress();
+ *      String name        = vatCheckServiceClient.getName();
+ *      VatAddress address = vatCheckServiceClient.getAddress();
  * }
  * </pre>
  */
@@ -166,9 +166,9 @@ public class VatCheckServiceClient {
         this.name = name;
     }
 
-    public String getAddress() {
+    public VatAddress getAddress() {
 
-        return address;
+        return VatAddress.parse( address );
     }
 
     public void setAddress( String address ) {

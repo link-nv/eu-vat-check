@@ -68,6 +68,7 @@ VatCheckServiceClient vatCheckServiceClient = new VatCheckServiceClient( country
 
 boolean valid = vatCheckServiceClient.isVatNumberValid();
 
+//After isVatNumberValid() you can get the name and address of the enterprise
 logger.inf( "Returned: valid=%s; name=%s; address=%s",
         valid, vatCheckServiceClient.getName(), vatCheckServiceClient.getAddress() );
 ```
