@@ -8,7 +8,7 @@
     <parent>
         <groupId>net.lin-k.eu</groupId>
         <artifactId>eu-vat-check</artifactId>
-        <version>0.1</version>
+        <version>GIT-SNAPSHOT</version>
     </parent>
 
     <groupId>net.lin-k.eu.eu-vat-check</groupId>
