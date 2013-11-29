@@ -43,9 +43,9 @@
     <!-- CODE MANAGEMENT -->
     <scm>
         <tag>HEAD</tag>
-        <url>https://github.com/link-nv/eu-vat-check</url>
-        <connection>scm:git:ssh://github.com/link-nv/eu-vat-check</connection>
-        <developerConnection>scm:git:ssh://github.com/link-nv/eu-vat-check</developerConnection>
+        <url>https://git@github.com/link-nv/eu-vat-check</url>
+        <connection>scm:git:ssh://git@github.com/link-nv/eu-vat-check</connection>
+        <developerConnection>scm:git:ssh://git@github.com/link-nv/eu-vat-check</developerConnection>
     </scm>
 
     <!-- DISTRIBUTION AND DEPLOYMENT -->
