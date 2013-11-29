@@ -1,0 +1,30 @@
+# OS X
+/.com.apple.timemachine.supported
+/.fseventsd
+.DS_Store
+
+# Maven2 Relocated Local Repository for Lin.k artifacts.
+/.m2-repo
+
+# IntelliJ
+/.idea/*
+!/.idea/encodings.xml
+!/.idea/validation.xml
+!/.idea/copyright
+!/.idea/copyright/*
+!/.idea/findbugs-idea.xml
+!/.idea/codeStyleSettings.xml
+*.iml
+/*.ipr
+/*.iws
+/.idea/misc.xml
+
+# Compiled
+/target
+/*/target
+/*/*/target
+
+# Scripts
+/.mvn-tools
+/.meta
+/work
