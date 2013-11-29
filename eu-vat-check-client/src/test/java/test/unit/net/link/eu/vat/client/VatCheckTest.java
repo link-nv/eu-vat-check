@@ -8,6 +8,7 @@
 package test.unit.net.link.eu.vat.client;
 
 import net.link.eu.vat.client.CountryCode;
+import net.link.eu.vat.client.VatAddress;
 import net.link.eu.vat.client.VatCheckServiceClient;
 import org.junit.Test;
 
@@ -29,8 +30,13 @@ public class VatCheckTest {
         VatCheckServiceClient vatCheckServiceClient = new VatCheckServiceClient( countryCode, vatNumber );
 
         boolean valid = vatCheckServiceClient.isVatNumberValid();
+        VatAddress address = vatCheckServiceClient.getAddress();
 
         assertEquals( true, valid );
         assertEquals( "NV LIN.K", vatCheckServiceClient.getName() );
+        assertEquals( "KLEIN-BEGIJNHOFSTRAAT", address.getStreet() );
+        assertEquals( "5", address.getNumber() );
+        assertEquals( "9090", address.getZipCode() );
+        assertEquals( "MELLE", address.getMunicipality() );
     }
 }
