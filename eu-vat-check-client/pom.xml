@@ -26,6 +26,12 @@
             <version>GIT-SNAPSHOT</version>
         </dependency>
 
+        <!-- Testing -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+
     </dependencies>
 
 </project>
