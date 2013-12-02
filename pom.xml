@@ -49,11 +49,11 @@
     <!-- DISTRIBUTION AND DEPLOYMENT -->
     <distributionManagement>
         <repository>
-            <id>repo.linkid.be</id>
+            <id>release</id>
             <url>${deploy.repository.url}</url>
         </repository>
         <snapshotRepository>
-            <id>repo.linkid.be</id>
+            <id>release</id>
             <url>${deploy.snapshot.url}</url>
             <uniqueVersion>false</uniqueVersion>
         </snapshotRepository>
