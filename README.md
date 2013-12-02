@@ -21,7 +21,6 @@ Add the linkID repositories to your pom file:
         <id>repo.linkid.be.release</id>
         <name>LinkID Public Repository</name>
         <url>http://repo.linkid.be/releases</url>
-
         <snapshots>
             <enabled>false</enabled>
             <updatePolicy>never</updatePolicy>
@@ -35,7 +34,6 @@ Add the linkID repositories to your pom file:
         <id>repo.linkid.be.snapshot</id>
         <name>LinkID Public Repository</name>
         <url>http://repo.linkid.be/snapshots</url>
-
         <snapshots>
             <enabled>true</enabled>
             <updatePolicy>always</updatePolicy>
@@ -53,7 +51,7 @@ Add the eu-vat-check-client dependency to your pom file:
 <dependency>
     <groupId>net.lin-k.eu.eu-vat-check</groupId>
     <artifactId>eu-vat-check-client</artifactId>
-    <version>GIT-SNAPSHOT</version>
+    <version>0.2</version>
 </dependency>
 ```
 
@@ -72,3 +70,16 @@ boolean valid = vatCheckServiceClient.isVatNumberValid();
 logger.inf( "Returned: valid=%s; name=%s; address=%s",
         valid, vatCheckServiceClient.getName(), vatCheckServiceClient.getAddress() );
 ```
+
+RELEASE NOTES
+=============
+
+v0.2 (2013-12-02)
+-----------------
+
+* Implemented all country codes.
+
+v0.1 (2013-11-29)
+-----------------
+
+* Initial release.
