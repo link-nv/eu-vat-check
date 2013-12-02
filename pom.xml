@@ -49,12 +49,12 @@
     <!-- DISTRIBUTION AND DEPLOYMENT -->
     <distributionManagement>
         <repository>
-            <id>buildserver-release-repository</id>
-            <url>${deploy.url}</url>
+            <id>repo.linkid.be</id>
+            <url>${deploy.repository.url}</url>
         </repository>
         <snapshotRepository>
-            <id>buildserver-snapshot-repository</id>
-            <url>${deploy.url}</url>
+            <id>repo.linkid.be</id>
+            <url>${deploy.snapshot.url}</url>
             <uniqueVersion>false</uniqueVersion>
         </snapshotRepository>
     </distributionManagement>
@@ -80,6 +80,8 @@
         <boot.classpath />
 
         <deploy.url>scpexe://buildserver/Users/devel/maven2/repository</deploy.url>
+        <deploy.repository.url>scpexe://repo.linkid.be/home/maven/repository/releases</deploy.repository.url>
+        <deploy.snapshot.url>scpexe://repo.linkid.be/home/maven/repository/snapshots</deploy.snapshot.url>
         <repo.url>http://repo.linkid.be/releases</repo.url>
         <!--<repo.plugin.url>http://repo1.maven.org/maven2</repo.plugin.url>-->
         <!--<repo.plugin.url>http://repo.linkid.be/releases</repo.plugin.url>-->
