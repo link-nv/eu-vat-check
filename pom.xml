@@ -10,7 +10,7 @@
     <groupId>net.lin-k.eu</groupId>
     <artifactId>eu-vat-check</artifactId>
     <packaging>pom</packaging>
-    <version>0.2</version>
+    <version>GIT-SNAPSHOT</version>
 
     <organization>
         <name>Lin.k N.V.</name>
