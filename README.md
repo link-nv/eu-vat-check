@@ -74,6 +74,11 @@ logger.inf( "Returned: valid=%s; name=%s; address=%s",
 RELEASE NOTES
 =============
 
+v0.3 (2013-12-17)
+-----------------
+
+* Updated the WSDL location.
+
 v0.2 (2013-12-02)
 -----------------
 
