@@ -51,7 +51,7 @@ Add the eu-vat-check-client dependency to your pom file:
 <dependency>
     <groupId>net.lin-k.eu.eu-vat-check</groupId>
     <artifactId>eu-vat-check-client</artifactId>
-    <version>0.2</version>
+    <version>0.3</version>
 </dependency>
 ```
 
