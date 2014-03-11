@@ -51,7 +51,7 @@ Add the eu-vat-check-client dependency to your pom file:
 <dependency>
     <groupId>net.lin-k.eu.eu-vat-check</groupId>
     <artifactId>eu-vat-check-client</artifactId>
-    <version>0.3</version>
+    <version>0.4</version>
 </dependency>
 ```
 
@@ -73,6 +73,11 @@ logger.inf( "Returned: valid=%s; name=%s; address=%s",
 
 RELEASE NOTES
 =============
+
+v0.4 (2014-03-11)
+-----------------
+
+* Added some utility methods. (See VATUtil class)
 
 v0.3 (2013-12-17)
 -----------------
