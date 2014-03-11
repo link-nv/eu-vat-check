@@ -222,6 +222,8 @@
                     <updateWorkingCopyVersions>false</updateWorkingCopyVersions>
                     <branchName>${project.version}-maint</branchName>
                     <mavenExecutorId>forked-path</mavenExecutorId>
+                    <pushChanges>false</pushChanges>
+                    <localCheckout>true</localCheckout>
                 </configuration>
             </plugin>
             <plugin>
