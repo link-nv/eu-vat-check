@@ -74,6 +74,11 @@ logger.inf( "Returned: valid=%s; name=%s; address=%s",
 RELEASE NOTES
 =============
 
+v0.5 (2016-06-23)
+-----------------
+
+* Release for repo.linkid.be move
+
 v0.4 (2014-03-11)
 -----------------
 
