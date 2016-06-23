@@ -8,7 +8,7 @@ More info about this subject is found [here](http://ec.europa.eu/taxation_custom
 Requirements
 ------------
 
-* Java 1.6+
+* Java 1.7+
 
 Usage
 -----
