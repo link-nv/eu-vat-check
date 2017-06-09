@@ -55,13 +55,6 @@
 
     <dependencies>
 
-        <!-- Specific dependencies: Util -->
-        <dependency>
-            <groupId>net.lin-k.util</groupId>
-            <artifactId>util-ws</artifactId>
-            <scope>provided</scope>
-        </dependency>
-
         <!-- Specific dependencies: External -->
         <dependency>
             <groupId>com.thoughtworks.xstream</groupId>
