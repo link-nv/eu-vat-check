@@ -8,7 +8,7 @@
     <parent>
         <groupId>net.lin-k.eu</groupId>
         <artifactId>eu-vat-check</artifactId>
-        <version>GIT-SNAPSHOT</version>
+        <version>0.6</version>
     </parent>
 
     <groupId>net.lin-k.eu.eu-vat-check</groupId>
@@ -21,7 +21,7 @@
         <dependency>
             <groupId>net.lin-k.eu.eu-vat-check</groupId>
             <artifactId>eu-vat-check-ws</artifactId>
-            <version>GIT-SNAPSHOT</version>
+            <version>0.6</version>
         </dependency>
 
         <!-- Testing -->
