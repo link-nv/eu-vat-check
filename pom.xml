@@ -12,31 +12,10 @@
     <packaging>pom</packaging>
     <version>GIT-SNAPSHOT</version>
 
-    <organization>
-        <name>linkID N.V.</name>
-        <url>https://www.linkid.be</url>
-    </organization>
-
     <modules>
         <module>eu-vat-check-ws</module>
         <module>eu-vat-check-client</module>
     </modules>
-
-    <!-- DEVELOPERS -->
-    <developers>
-        <developer>
-            <id>gvhoecke</id>
-            <name>Gianni Van Hoecke</name>
-            <email>gianni@lin-k.net</email>
-            <roles>
-                <role>development</role>
-            </roles>
-            <timezone>+1</timezone>
-            <properties>
-                <private-email>gianni.vh@gmail.com</private-email>
-            </properties>
-        </developer>
-    </developers>
 
     <!-- CODE MANAGEMENT -->
     <scm>
@@ -49,6 +28,8 @@
     <properties>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.javadoc.skip>true</maven.javadoc.skip>
+        <maven.source.skip>true</maven.source.skip>
 
         <maven-surefire-report-plugin.version>2.5</maven-surefire-report-plugin.version>
         <maven-clean-plugin.version>2.4.1</maven-clean-plugin.version>
