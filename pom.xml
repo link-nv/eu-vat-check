@@ -50,8 +50,6 @@
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-
-        <maven-javadoc-plugin.version>2.8.1</maven-javadoc-plugin.version>
         <maven-surefire-report-plugin.version>2.5</maven-surefire-report-plugin.version>
         <maven-clean-plugin.version>2.4.1</maven-clean-plugin.version>
         <maven-resources-plugin.version>2.5</maven-resources-plugin.version>
@@ -63,8 +61,6 @@
         <maven-deploy-plugin.version>2.7-7l</maven-deploy-plugin.version>
         <maven-assembly-plugin.version>2.2-beta-5</maven-assembly-plugin.version>
         <maven-dependency-plugin.version>2.2</maven-dependency-plugin.version>
-        <maven-javadoc-plugin.version>2.8.1</maven-javadoc-plugin.version>
-        <maven-source-plugin.version>2.0.4</maven-source-plugin.version>
 
         <!-- JAX-WS -->
         <jaxws-maven-plugin.version>2.2</jaxws-maven-plugin.version>
@@ -78,45 +74,6 @@
         <commons.version>3.1</commons.version>
 
     </properties>
-
-    <!-- COMPILATION PROFILES -->
-    <profiles>
-
-        <!-- Release profile -->
-        <profile>
-            <id>release</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-javadoc-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <id>attach-javadocs</id>
-                                <goals>
-                                    <goal>jar</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-source-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <id>attach-sources</id>
-                                <phase>verify</phase>
-                                <goals>
-                                    <goal>jar</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-
-    </profiles>
 
     <build>
 
@@ -201,15 +158,6 @@
                     <showDeprecation>true</showDeprecation>
                 </configuration>
                 <inherited>true</inherited>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>${maven-javadoc-plugin.version}</version>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-source-plugin</artifactId>
             </plugin>
             <plugin>
                 <artifactId>maven-clean-plugin</artifactId>
@@ -297,11 +245,6 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-deploy-plugin</artifactId>
                     <version>${maven-deploy-plugin.version}</version>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-source-plugin</artifactId>
-                    <version>${maven-source-plugin.version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
