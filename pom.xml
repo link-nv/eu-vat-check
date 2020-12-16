@@ -49,7 +49,7 @@
         <jaxws-maven.version>1.12</jaxws-maven.version>
 
         <util.version>1.50</util.version>
-        <xstream.version>1.4.6</xstream.version>
+        <xstream.version>1.4.15</xstream.version>
         <jaxws.version>2.1.4</jaxws.version>
         <junit.version>4.8.1</junit.version>
         <commons.version>3.1</commons.version>
@@ -239,7 +239,7 @@
                         </execution>
                     </executions>
                     <configuration>
-                        <sei />
+                        <sei/>
                         <wsdlDirectory>${basedir}/src/main/resources</wsdlDirectory>
                         <verbose>true</verbose>
                         <xdebug>true</xdebug>
