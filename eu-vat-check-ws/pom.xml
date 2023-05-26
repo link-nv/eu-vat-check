@@ -37,7 +37,7 @@
                                     </classpath>
                                 </taskdef>
                                 <mkdir dir="${project.build.directory}/generated-sources/java" />
-                                <wsimport debug="true" fork="true" destdir="${project.build.directory}/classes" verbose="true" wsdl="http://ec.europa.eu/taxation_customs/vies/checkVatService.wsdl" sourcedestdir="${project.build.directory}/generated-sources/java">
+                                <wsimport debug="true" fork="true" destdir="${project.build.directory}/classes" verbose="true" wsdl="https://ec.europa.eu/taxation_customs/vies/checkVatService.wsdl" sourcedestdir="${project.build.directory}/generated-sources/java">
                                     <produces dir="${project.build.directory}/generated-sources/java">
                                         <include name="**/*.java" />
                                     </produces>

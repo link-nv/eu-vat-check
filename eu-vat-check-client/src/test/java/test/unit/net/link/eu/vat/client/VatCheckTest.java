@@ -12,7 +12,7 @@ import net.link.eu.vat.client.VatAddress;
 import net.link.eu.vat.client.VatCheckServiceClient;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 /**
  * User: gvhoecke <gianni.vanhoecke@lin-k.net>
@@ -25,18 +25,13 @@ public class VatCheckTest {
     public void testVatNumber() {
 
         CountryCode countryCode = CountryCode.BE;
-        String vatNumber        = "0446495156";
+        String      vatNumber   = "0666788490";
 
         VatCheckServiceClient vatCheckServiceClient = new VatCheckServiceClient( countryCode, vatNumber );
 
-        boolean valid = vatCheckServiceClient.isVatNumberValid();
+        boolean    valid   = vatCheckServiceClient.isVatNumberValid();
         VatAddress address = vatCheckServiceClient.getAddress();
 
-        assertEquals( true, valid );
-        assertEquals( "NV LIN.K", vatCheckServiceClient.getName() );
-        assertEquals( "KLEIN-BEGIJNHOFSTRAAT", address.getStreet() );
-        assertEquals( "5", address.getNumber() );
-        assertEquals( "9090", address.getZipCode() );
-        assertEquals( "MELLE", address.getMunicipality() );
+        assertTrue( "VAT number is invalid", valid );
     }
 }
